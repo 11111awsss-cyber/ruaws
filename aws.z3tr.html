@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>نموذج البرلمان الطلابي</title>
+
+<style>
+    body {
+        font-family: "Cairo", sans-serif;
+        background: #f3f3f3;
+        padding: 30px;
+    }
+    .page {
+        width: 70%;
+        margin: auto;
+        background: white;
+        padding: 30px 40px;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.15);
+        font-size: 18px;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 25px;
+        font-size: 22px;
+    }
+    label {
+        font-weight: bold;
+        margin-top: 20px;
+        display: block;
+    }
+    input, textarea {
+        width: 100%;
+        padding: 12px;
+        margin-top: 7px;
+        border-radius: 8px;
+        border: 1px solid #aaa;
+        font-size: 17px;
+    }
+    .radio-group {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .radio-group label {
+        font-weight: normal;
+        margin-left: 10px;
+        display: block;
+    }
+    textarea {
+        height: 130px;
+    }
+    .footer {
+        margin-top: 40px;
+        text-align: left;
+        font-size: 16px;
+        color: #444;
+        font-weight: bold;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+    <h2>المديرية: لواء الطيبة والوسطية</h2>
+
+    <!-- اسم المدرسة كتابة -->
+    <label>اسم المدرسة:</label>
+    <input type="text" placeholder="اكتب اسم المدرسة هنا">
+
+    <!-- سؤال 1 -->
+    <label>ما مدى رضا أولياء الأمور عن مشاركة أبنائهم في المجلس البرلماني الطلابي؟</label>
+    <div class="radio-group">
+        <label><input type="radio" name="parents">  عالي جداً</label>
+        <label><input type="radio" name="parents">  عالي</label>
+        <label><input type="radio" name="parents">  متوسط</label>
+        <label><input type="radio" name="parents">  ضعيف</label>
+    </div>
+
+    <!-- سؤال 2 -->
+    <label>ما مدى رضا الطلبة عن مشاركتهم كأعضاء في المجلس البرلماني الطلابي؟</label>
+    <div class="radio-group">
+        <label><input type="radio" name="students">  عالي جداً</label>
+        <label><input type="radio" name="students">  عالي</label>
+        <label><input type="radio" name="students">  متوسط</label>
+        <label><input type="radio" name="students">  ضعيف</label>
+    </div>
+
+    <!-- سؤال 3 -->
+    <label>ما مدى رضاك عن ملتقى البرلمان الطلابي؟</label>
+    <div class="radio-group">
+        <label><input type="radio" name="meeting">  عالي جداً</label>
+        <label><input type="radio" name="meeting">  عالي</label>
+        <label><input type="radio" name="meeting">  متوسط</label>
+        <label><input type="radio" name="meeting">  ضعيف</label>
+    </div>
+
+    <!-- اقتراحات -->
+    <label>اقتراحات وتحسينات:</label>
+    <textarea placeholder="اكتب اقتراحاتك هنا..."></textarea>
+
+    <!-- التوقيع أسفل اليسار -->
+    <div class="footer">
+        by aws qasem abu zaitoon
+    </div>
+
+</div>
+
+</body>
+</html>
